@@ -2554,6 +2554,13 @@
 			background-size: cover;
 		}
 
+		@media screen and (max-width: 1366px) {
+			.wrapper.style3 {
+				background-attachment: scroll;
+				background-size: 215%;
+			}
+		}
+
 		.wrapper.style3.about {
 			background: url(images/overlay.png), url(../../images/patio.jpg);
 			background-size: cover;
@@ -2942,6 +2949,14 @@
 		font-family: "Poller One", "Raleway", Arial, Helvetica, sans-serif;
 	}
 
+	#banner p {
+		color: #ddd;
+		font-family: "Poller One", "Raleway", Arial, Helvetica, sans-serif;;
+		font-size: 1.5em;
+		margin-bottom: 1.75em;
+		text-transform: uppercase;
+	}
+
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
@@ -2954,6 +2969,32 @@
 		background-size: cover;
 		line-height: 1.75;
 		text-align: center;
+	}
+
+	#banner.alt.small {
+		display: none;
+	}
+
+	/* #banner.alt.small * {
+		text-align: center;
+	} */
+
+	/* #banner.alt.small header {
+		padding-top: 4em;
+	} */
+
+	/* #banner.alt.small h1 {
+		padding-bottom: 1em;
+	} */
+
+	@media screen and (max-width: 1366px) {
+		#banner.large {
+			display: none;
+		}
+
+		#banner.alt.small {
+			display: block;
+		}
 	}
 
 	#banner.alt {
@@ -2974,6 +3015,7 @@
 			text-align: right;
 			padding-right: .5em;
 		}
+
 	}
 
 		#banner:last-child {
@@ -2986,14 +3028,6 @@
 			font-size: 3.5em;
 			line-height: 1.35;
 			margin-bottom: 0.5em;
-		}
-
-		#banner p {
-			color: #ddd;
-			font-family: "Poller One", "Raleway", Arial, Helvetica, sans-serif;;
-			font-size: 1.5em;
-			margin-bottom: 1.75em;
-			text-transform: uppercase;
 		}
 
 		@media screen and (max-width: 1450px) {
@@ -3060,6 +3094,11 @@
 			#banner p {
 				font-size: 1em;
 			}
+
+			/* #banner.alt.small {
+				padding-bottom: 4.75em;
+				padding-top: 6.5em;
+			} */
 
 		}
 
